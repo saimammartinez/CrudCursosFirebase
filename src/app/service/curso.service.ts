@@ -32,10 +32,12 @@ export class CursoService {
     console.log('NEW Curso');
     this.cursosColletions.add(curso)
   }  
-  deleteCurso(){
-    console.log('DELETE Curso');
+  deleteCurso(curso: CursoInterface) {
+    this.cursoDoc = this.afs.doc(`cursos/${curso.id}`);
+    this.cursoDoc.delete();
   }
-  updateCurso(){
-    console.log('UPDATE Curso');
+  updateCurso(curso: CursoInterface) {
+    this.cursoDoc = this.afs.doc(`cursos/${curso.id}`);
+    this.cursoDoc.update(curso);
   }
 }
