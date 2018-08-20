@@ -16,7 +16,8 @@ export class AddCursoComponent implements OnInit {
     idioma: '',
     tecnologia: '',
     fecha: '',
-    descripcion: ''
+    descripcion: '',
+    url: '',
   };
 
   constructor(private cursoService: CursoService) { }

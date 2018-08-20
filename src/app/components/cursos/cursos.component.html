@@ -11,6 +11,8 @@
         <br>
         <blockquote>{{curso.descripcion}}</blockquote>
         <br>
+        <blockquote>{{curso.url}}</blockquote>
+        <br>
         <span class="my_tag amber">
           <strong>Precio:</strong>{{curso.precio}}</span>
         <span class="my_tag amber">
@@ -48,6 +50,10 @@
               <div class="input-field col s6">
                 <input [(ngModel)]="curso.tecnologia" #tecnologia="ngModel" type="text" name="tecnologia" id="tecnologia" placeholder="Tecnología curso">
                 <label>Tecnología</label>
+              </div>
+              <div class="input-field col s6">
+                <input [(ngModel)]="curso.url" #tecnologia="ngModel" type="text" name="url" id="url" placeholder="Url">
+                <label>URL</label>
               </div>
               <button (click)="deleteCurso($event, curso)" class="btn red right">Borrar
                 <i class="material-icons right">delete_forever</i>

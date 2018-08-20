@@ -7,4 +7,5 @@ export interface CursoInterface{
     tecnologia?: string;
     fecha?: any;
     descripcion?: string;
+    url?: string;
 }

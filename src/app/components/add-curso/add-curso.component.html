@@ -59,6 +59,15 @@
               <div *ngIf="tecnologia.errors.pattern">Tecnologia deber ser JavaScript,PHP,Base de datos,React,Nodejs,SEO</div>
             </div>
           </div>
+          <div class="input-field col s8">
+            <input [(ngModel)]="curso.url" #url="ngModel" type="text" name="url" id="url" placeholder="Url"
+              minlength="7"   required>
+            <label>URL</label>
+            <div *ngIf="url.touched && !url.valid">
+              <div *ngIf="url.errors.required">Tecnologia es requerido</div>
+              <div *ngIf="url.errors.minlength">Tecnologia debe ser de al menos {{url.errors.minlength.requiredLength}} caracteres.</div>
+            </div>
+          </div>
           <button type="submit" class="btn waves-effect waves-light orange right">Guardar
             <i class="material-icons">add_circle</i>
           </button>
