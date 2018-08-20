@@ -11,7 +11,9 @@
         <br>
         <blockquote>{{curso.descripcion}}</blockquote>
         <br>
-        <blockquote>{{curso.url}}</blockquote>
+        <blockquote>
+          <a href="{{curso.url}}" target="_blank">{{curso.url}}</a>
+          </blockquote>
         <br>
         <span class="my_tag amber">
           <strong>Precio:</strong>{{curso.precio}}</span>
@@ -29,32 +31,33 @@
             <div class="row">
               <div class="input-field col s6">
                 <input [(ngModel)]="curso.nombre" #nombre="ngModel" type="text" name="nombre" id="nombre" >
-                <label>Nombre</label>
+                <label class="active">Nombre</label>
               </div>
               <div class="input-field col s6">
                 <input [(ngModel)]="curso.descripcion" #descripcion="ngModel" type="text" name="descripcion" id="descripcion" >
-                <label>Descripcion</label>
+                <label class="active">Descripcion</label>
               </div>
               <div class="input-field col s6">
                 <input [(ngModel)]="curso.formador" #formador="ngModel" type="text" name="formador" id="formador" placeholder="Formador curso">
-                <label>Formador</label>
+                <label class="active">Formador</label>
               </div>
               <div class="input-field col s6">
                 <input [(ngModel)]="curso.precio" #precio="ngModel" type="text" name="precio" id="precio" placeholder="Precio curso">
-                <label>Precio</label>
+                <label class="active">Precio</label>
               </div>
               <div class="input-field col s6">
                 <input [(ngModel)]="curso.idioma" #idioma="ngModel" type="text" name="idioma" id="idioma" placeholder="Idioma curso">
-                <label>Idioma</label>
+                <label class="active">Idioma</label>
               </div>
               <div class="input-field col s6">
                 <input [(ngModel)]="curso.tecnologia" #tecnologia="ngModel" type="text" name="tecnologia" id="tecnologia" placeholder="Tecnología curso">
-                <label>Tecnología</label>
+                <label class="active">Tecnología</label>
               </div>
               <div class="input-field col s6">
                 <input [(ngModel)]="curso.url" #tecnologia="ngModel" type="text" name="url" id="url" placeholder="Url">
-                <label>URL</label>
+                <label class="active">URL</label>
               </div>
+              
               <button (click)="deleteCurso($event, curso)" class="btn red right">Borrar
                 <i class="material-icons right">delete_forever</i>
               </button>
