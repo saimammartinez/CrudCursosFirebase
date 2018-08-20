@@ -52,12 +52,12 @@
           </div>
           <div class="input-field col s6">
             <input [(ngModel)]="curso.tecnologia" #tecnologia="ngModel" type="text" name="tecnologia" id="tecnologia" placeholder="Tecnología curso"
-              minlength="3" maxlength="20" pattern="JavaScript|PHP|Base de datos|React|Nodejs|SEO" required>
+              minlength="3" maxlength="20"  required>
             <label>Tecnología</label>
             <div *ngIf="tecnologia.touched && !tecnologia.valid">
               <div *ngIf="tecnologia.errors.required">Tecnologia es requerido</div>
               <div *ngIf="tecnologia.errors.minlength">Tecnologia debe ser de al menos {{tecnologia.errors.minlength.requiredLength}} caracteres.</div>
-              <div *ngIf="tecnologia.errors.pattern">Tecnologia deber ser JavaScript,PHP,Base de datos,React,Nodejs,SEO</div>
+              <!-- <div *ngIf="tecnologia.errors.pattern">Tecnologia deber ser JavaScript,PHP,Base de datos,React,Nodejs,SEO</div> -->
             </div>
           </div>
           <div class="input-field col s8">
@@ -65,8 +65,8 @@
               minlength="7" maxlength="200"  required>
             <label>URL</label>
             <div *ngIf="url.touched && !url.valid">
-              <div *ngIf="url.errors.required">Tecnologia es requerido</div>
-              <div *ngIf="url.errors.minlength">Tecnologia debe ser de al menos {{url.errors.minlength.requiredLength}} caracteres.</div>
+              <div *ngIf="url.errors.required">URL es requerido</div>
+              <div *ngIf="url.errors.minlength">URL debe ser de al menos {{url.errors.minlength.requiredLength}} caracteres.</div>
             </div>
           </div>
           <button type="submit" class="btn waves-effect waves-light orange right">Guardar

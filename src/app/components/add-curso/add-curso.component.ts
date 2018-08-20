@@ -32,7 +32,7 @@ export class AddCursoComponent implements OnInit {
       this.cursoService.addCurso(this.curso);
       myForm.resetForm();
     } else {
-      console.log('Algo va mal');
+      console.log('No se ha podido validar el formulario');
     }
 
   }
