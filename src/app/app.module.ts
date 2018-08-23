@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from 'angularfire2';
 
@@ -30,6 +31,7 @@ import { SignupComponent } from './components/signup/signup.component';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebaseConfig, 'CRUD-Cursos'),
     AngularFirestoreModule,
+    AngularFireAuthModule,
     FormsModule
   ],
   providers: [CursoService],
