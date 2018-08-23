@@ -1,6 +1,13 @@
 <nav>
   <div class="nav-wrapper black">
-    <a href="" class="brand-logo center">CURSOS FAVORITOS</a>
+    <a href="#" class="brand-logo center">CURSOS FAVORITOS</a>
+    <a *ngIf='logged==false' href="#" id="Singup" (click)='onSignup($event)' class="right">Sing Up</a>
+    <a *ngIf='logged==false' href="#" id="Login" (click)='onLogin($event)' class="right">Login</a>
+    <a *ngIf='logged'        href="#" id="Logout" (click)='onLogout($event)' class="right">Logout</a>
   </div> 
 
 </nav>
+<div *ngIf="logged" class="container">
+  <app-add-curso></app-add-curso>
+  <app-cursos></app-cursos>
+</div>

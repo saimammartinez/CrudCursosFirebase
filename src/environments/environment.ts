@@ -6,11 +6,11 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyBGrNkx7iMMcV73t3aE7dCTEbotJGYoCHM",
-    authDomain: "crud-cursos.firebaseapp.com",
-    databaseURL: "https://crud-cursos.firebaseio.com",
-    projectId: "crud-cursos",
-    storageBucket: "crud-cursos.appspot.com",
-    messagingSenderId: "743254507452"
+    apiKey: 'AIzaSyBGrNkx7iMMcV73t3aE7dCTEbotJGYoCHM',
+    authDomain: 'crud-cursos.firebaseapp.com',
+    databaseURL: 'https://crud-cursos.firebaseio.com',
+    projectId: 'crud-cursos',
+    storageBucket: 'crud-cursos.appspot.com',
+    messagingSenderId: '743254507452'
   }
 };

@@ -11,6 +11,9 @@ import { AppComponent } from './app.component';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { AddCursoComponent } from './components/add-curso/add-curso.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
+
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AppComponent,
     CursosComponent,
     AddCursoComponent,
-    NavbarComponent
+    NavbarComponent,
+    LoginComponent,
+    SignupComponent,
+
   ],
   imports: [
     BrowserModule,

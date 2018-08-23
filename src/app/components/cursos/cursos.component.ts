@@ -10,10 +10,10 @@ import { CursoService } from '../../service/curso.service';
 })
 export class CursosComponent implements OnInit {
 cursos: CursoInterface[];
-editState: boolean = false;
+editState = false;
 cursoToEdit: CursoInterface;
 
-  constructor(private cursoService:CursoService) { }
+  constructor(private cursoService: CursoService) { }
 
   ngOnInit() {
     this.cursoService.getCursos().subscribe(cursos => {

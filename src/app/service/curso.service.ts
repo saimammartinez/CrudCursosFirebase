@@ -29,7 +29,6 @@ export class CursoService {
     return this.cursos;
   }
   addCurso(curso: CursoInterface) {
-    console.log('NEW Curso');
     this.cursosColletions.add(curso);
   }
   deleteCurso(curso: CursoInterface) {
